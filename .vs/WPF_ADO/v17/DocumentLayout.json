@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|f:\\c#_desktop\\\u00F4n t\u1EADp\\de1\\wpf_ado\\quanlythuenha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|solutionrelative:quanlythuenha.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|f:\\c#_desktop\\\u00F4n t\u1EADp\\de1\\wpf_ado\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|f:\\c#_desktop\\\u00F4n t\u1EADp\\de1\\wpf_ado\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{99E57A9C-0FBE-47D9-A31F-8775BB353D84}|WPF_ADO.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuanLyThueNha.xaml.cs",
+              "DocumentMoniker": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\QuanLyThueNha.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyThueNha.xaml.cs",
+              "ToolTip": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\QuanLyThueNha.xaml.cs",
+              "RelativeToolTip": "QuanLyThueNha.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T16:00:19.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-20T15:24:28.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "F:\\C#_Desktop\\\u00D4n t\u1EADp\\De1\\WPF_ADO\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T15:24:26.724Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

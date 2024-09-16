@@ -1,0 +1,70 @@
+﻿<Window x:Class="WPF_ADO.QuanLyThueNha"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ADO"
+        mc:Ignorable="d"
+        Title="QuanLyThueNha" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <GroupBox Header="Thông tin khách thuê nhà" Height="150">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Mã nhà" Grid.Column="0" Grid.Row="0"></TextBlock>
+                    <TextBox x:Name="txtMaNha" Grid.Column="1" Grid.Row="0"></TextBox>
+
+                    <TextBlock Text="Tên chủ nhà" Grid.Column="0" Grid.Row="1"></TextBlock>
+                    <TextBox x:Name="txtTenChuNha" Grid.Column="1" Grid.Row="1"></TextBox>
+
+
+                    <TextBlock Text="Giá thuê" Grid.Column="0" Grid.Row="4"></TextBlock>
+                    <TextBox x:Name="txtGiaThue" Grid.Column="1" Grid.Row="4"></TextBox>
+
+                    <GroupBox Header="Trạng thái" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="rdYes" Content="Đã cho thuê" Width="90" Margin="50,1"/>
+                            <RadioButton x:Name="rdNo" Content="Chưa cho thuê" Width="100"/>
+                        </StackPanel>
+                    </GroupBox>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="Danh sách khách thuê nhà">
+                <DataGrid x:Name="DataGrid" Height="150" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged">
+                    <DataGrid.Columns>
+                        <!--Đặt tên binding giống với các thuộc tính trong SQL-->
+                        <DataGridTextColumn Header="Mã nhà" Width="100" Binding="{Binding MaNha}"/>
+                        <DataGridTextColumn Header="Tên chủ nhà" Width="100" Binding="{Binding TenChuNha}"/>
+                        <DataGridTextColumn Header="Giá thuê" Width="100" Binding="{Binding GiaThue}"/>
+                        <DataGridTextColumn Header="Trạng thái" Width="100" Binding="{Binding DaChoThue}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+
+            <GroupBox Header="Chức năng" Height="50" Width="500">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnThem" Content="Thêm" Width="70" Margin="10,1" Click="btnThem_Click"></Button>
+                    <Button x:Name="btnSua" Content="Sửa" Width="70" Margin="10,1" Click="btnSua_Click"></Button>
+                    <Button x:Name="btnXoa" Content="Xóa" Width="70" Margin="10,1" Click="btnXoa_Click"></Button>
+                    <Button x:Name="btnLamMoi" Content="Làm mới" Width="70" Margin="10,1"></Button>
+                </StackPanel>
+            </GroupBox>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,77 @@
+﻿<Window x:Class="WPF_ADO.QuanLyHopDong"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ADO"
+        mc:Ignorable="d"
+        Title="QuanLyHopDong" Height="600" Width="800">
+    <Grid>
+        <StackPanel>
+            <GroupBox Header="Thông tin khách thuê nhà" Height="200">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="40"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Mã hợp đồng" Grid.Column="0" Grid.Row="0"></TextBlock>
+                    <TextBox x:Name="txtMaHopDong" Grid.Column="1" Grid.Row="0"></TextBox>
+
+                    <TextBlock Text="Tên chủ nhà" Grid.Column="0" Grid.Row="1"></TextBlock>
+                    <TextBox x:Name="txtTenChuNha" Grid.Column="1" Grid.Row="1"></TextBox>
+
+                    <TextBlock Text="Tên khách" Grid.Column="0" Grid.Row="2"></TextBlock>
+                    <TextBox x:Name="txtTenKh" Grid.Column="1" Grid.Row="2"></TextBox>
+
+                    <TextBlock Text="Ngày Bắt Đầu" Grid.Column="0" Grid.Row="3"></TextBlock>
+                    <DatePicker x:Name="dtpNgayBatDau" Grid.Column="1" Grid.Row="3"></DatePicker>
+
+                    <TextBlock Text="Ngày Kết Thúc" Grid.Column="0" Grid.Row="4"></TextBlock>
+                    <DatePicker x:Name="dtpNgayKetThuc" Grid.Column="1" Grid.Row="4"></DatePicker>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Header="Tìm kiếm" Height="50">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtTimKiem" Text="" Width="300" Margin="70,1"></TextBox>
+                    <Button x:Name="btnTimKiem" Width="100" Content="Tìm Khách"></Button>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Danh sách hợp đồng">
+                <DataGrid x:Name="DataGrid" Height="150" AutoGenerateColumns="False" SelectionChanged="DataGrid_SelectionChanged">
+                    <DataGrid.Columns>
+                        <!-- Đặt tên binding giống với các thuộc tính trong SQL -->
+                        <DataGridTextColumn Header="Số hợp đồng" Width="100" Binding="{Binding SoHD}"/>
+                        <DataGridTextColumn Header="Tên chủ nhà" Width="100" Binding="{Binding TenChuNha}"/>
+                        <DataGridTextColumn Header="Tên khách hàng" Width="100" Binding="{Binding TenKhach}"/>
+                        <DataGridTextColumn Header="Ngày bắt đầu" Width="100" Binding="{Binding NgayBatDau}"/>
+                        <DataGridTextColumn Header="Ngày kết thúc" Width="100" Binding="{Binding NgayKetThuc}"/>
+                        <DataGridTextColumn Header="Thành tiền" Width="100" Binding="{Binding ThanhTien}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+
+            <GroupBox Header="Chức năng" Height="50" Width="500">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnThem" Content="Thêm" Width="70" Margin="10,1"></Button>
+                    <Button x:Name="btnSua" Content="Sửa" Width="70" Margin="10,1"></Button>
+                    <Button x:Name="btnXoa" Content="Xóa" Width="70" Margin="10,1"></Button>
+                    <Button x:Name="btnLamMoi" Content="Làm mới" Width="70" Margin="10,1" Click="btnLamMoi_Click"></Button>
+                </StackPanel>
+            </GroupBox>
+
+        </StackPanel>
+    </Grid>
+</Window>
